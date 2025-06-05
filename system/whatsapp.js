@@ -542,7 +542,7 @@ async function ZakrenzTrashXUI(target) {
           title: "𖣂 - Hangz Real - 𖣂",
           showAdAttribution: true,
           mediaType: 1,
-          thumbnail: fs.readFileSync("./lib/bruh.png")
+          thumbnail: fs.readFileSync("./system/lib/bruh.png")
         },
         forwardedNewsletterMessageInfo: {
           newsletterJid: "1744254936165140@newsletter",
